@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorTexto</item>
+        <item name="android:windowBackground">@drawable/fondo_app</item>
+        <item name="android:buttonStyle">@style/boton</item>
+
+
+        <item name="android:itemBackground">@color/colorFondo</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="boton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/fondo_boton</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:padding">10dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="mega_texto" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_black</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#828080</item>
+    </style>
+
+    <style name="sub_titulo" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+    <style name="boton1" parent="android:Widget.Button">
+        <item name="android:background">@drawable/fondo_boton1</item>
+        <item name="android:textColor">@color/colorBoton</item>
+        <item name="android:padding">10dp</item>
+        <item name="fontFamily">@font/roboto_bold</item>
+    </style>
+    <style name="listas" parent="android:Widget.ListView">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+</resources>

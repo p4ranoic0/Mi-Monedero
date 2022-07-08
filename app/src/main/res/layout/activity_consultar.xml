@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarActivity">
+
+    <TextView
+        android:id="@+id/tvIdConsulta"
+        android:layout_width="wrap_content"
+        android:textColor="#fff"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_monedero"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvmovimiento"
+        android:textAlignment="center"
+        android:fontFamily="@font/roboto_regular"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvMonto"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="80sp"
+        android:textAlignment="center"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="#74BBB7B7"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/ic_mano"/>
+
+        <TextView
+            android:id="@+id/tvDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:allowUndo="false"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"
+            android:fontFamily="@font/roboto_black"
+            android:layout_gravity="bottom"
+            android:text="descrop"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fecha"
+                android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_gravity="bottom"
+
+            android:text="descrop"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <Button
+            android:id="@+id/btnModificar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btnEliminar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="15dp"
+            android:layout_margin="10dp"
+            android:text="Eliminar" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llModificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <EditText
+            android:id="@+id/etDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_weight="4"
+            android:padding="15dp"
+
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/etMonto"
+            android:textAlignment="textEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:padding="15dp"
+            android:layout_weight="0.5"
+            android:inputType="number"
+            android:text="Name" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinnerElegir"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:paddingBottom="15dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:visibility="invisible"
+        android:layout_width="150dp"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        style="@style/boton1"
+        android:text="Grabar" />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:orientation="vertical"
+    tools:context=".RegistrarActivity">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/mega_texto"
+        android:text="Registrar Movimiento"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/etDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:ems="20"
+        />
+
+    <EditText
+        android:id="@+id/etMonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="20"
+        android:hint="Monto"
+        android:layout_marginBottom="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="15dp"
+        android:weightSum="6">
+
+        <Button
+            android:id="@+id/btnGrabar"
+            android:onClick="Grabar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_margin="20dp"
+            android:text="Grabar" />
+        <Switch
+            android:id="@+id/swGastoIngrso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+
+            android:layout_weight="1"
+            android:text="Gasto"
+            android:fontFamily="thin"
+            android:textSize="12sp"
+            android:checked="true"
+            android:textColor="#000"
+            android:textOff="Ingreso"
+            android:textOn="Elegir" />
+    </LinearLayout>
+
+
+</LinearLayout>
